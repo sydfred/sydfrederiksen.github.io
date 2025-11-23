@@ -1,53 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sydney Frederiksen</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Sydney Frederiksen</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#cv">CV</a>
-      <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">Sydney Frederiksen</a>
+        <span class="tagline">Speech-Language Pathology | Aphasia & Literacy</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a short bio here.</p>
-  </section>
+  <main>
+    <!-- ===== HERO / ABOUT ===== -->
+    <section id="about" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hello, I’m Sydney.</h1>
+          <p class="lead">
+            I’m a graduate student at Georgia State Univerity studying Speech-Language Pathology with interests in
+            <strong>aphasia</strong>, <strong>reading and literacy</strong>, and
+            <strong>person-centered neurorehabilitation</strong>.
+          </p>
+          <p>
+            My work focuses on how language, cognition, and reading interact after
+            acquired brain injury, and how evidence-based, culturally responsive
+            practice can support people with communication disorders and their families.
+          </p>
 
-  <section id="cv">
-    <h2>CV</h2>
-    <p><a href="files/YourCV.pdf" target="_blank">Download my CV</a></p>
-  </section>
+          <div class="hero-links">
+            <a href="cv.html" class="btn primary">View CV</a>
+            <a href="#publications" class="btn ghost">See publications</a>
+          </div>
+        </div>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li>Your publications will go here.</li>
-    </ul>
-  </section>
+        <div class="hero-photo">
+          <!-- Replace headshot.jpg with your actual file name -->
+          <img src="headshot.jpg" alt="Photo of Sydney Frederiksen" />
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Describe any research, clinical, or academic projects.</p>
-  </section>
+    <!-- ===== PUBLICATIONS ===== -->
+    <section id="publications" class="section">
+      <div class="container">
+        <h2>Publications & Manuscripts</h2>
+        <p class="section-intro">
+          Below are selected publications and works in progress. Entries are formatted in APA style.
+        </p>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: youremail@example.com</p>
-  </section>
+        <ol class="pub-list">
+          <li>
+            Frederiksen, S., &amp; Collaborator, A. (2026).
+            <span class="pub-title">Reading attitudes and performance in people with aphasia.</span>
+            <em>Journal of Speech, Language, and Hearing Research</em>.
+            Advance online publication.
+          </li>
+          <li>
+            Frederiksen, S. (2025).
+            <span class="pub-title">Parent-led early intervention to support babbling and early words.</span>
+            <em>Perspectives of the ASHA Special Interest Groups</em>, 10(2), 100–115.
+        </ol>
 
-  <footer>
-    <p>© YOUR NAME, 2025</p>
+        <p class="note">
+          Full list of presentations, posters, and projects is available in my
+          <a href="cv.html">CV</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Selected Projects</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Reading in Aphasia Project</h3>
+            <p>
+              Mixed-methods study examining relationships between standardized
+              reading scores and self-reported reading attitudes in people with aphasia
+              using tools such as the WAB, CARA, and TOWRE-2.
+            </p>
+          </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-intro">
+          I’m always happy to connect about research, clinical opportunities, and collaboration.
+        </p>
+
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:sydney@chatterstone.com">youremail@example.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/sydfrederiksen">github.com/sydfrederiksen</a></li>
+          <!-- Add LinkedIn or other links if you want -->
+          <!-- <li><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/sydney-frederiksen">LinkedIn Profile</a></li> -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sydney Frederiksen. All rights reserved.</p>
+    </div>
+    <script>
+      // Set footer year automatically
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>
