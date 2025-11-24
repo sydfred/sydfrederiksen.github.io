@@ -103,13 +103,13 @@ h1, h2, h3 {
 /* ===== Hero / About (Butter block + sticker photo) ===== */
 
 #about.section.hero {
-  background: #F2D88F;        /* butter */
+  background: #FFF6F5;        /* butter */
   color: #1f2933;
   border-bottom: 10px solid #B4B534;
 }
 #about.section.hero {
   position: relative;
-  background: #F2D88F;
+  background: #FFF6F5;
   --scallop-bg: #FFFAF3; /* page background */
 }
 /* scalloped bottom for hero */
