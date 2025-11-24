@@ -75,9 +75,14 @@ h1, h2, h3 {
   color: #FFFAF3;
   margin-top: 2px;
 }
-
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;          /* space between items */
+  flex-wrap: nowrap;  /* prevents Contact from dropping */
+  margin-left: auto;  /* pushes nav links to the right */
+}
 .main-nav a {
-  margin-left: 10px;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
@@ -90,7 +95,7 @@ h1, h2, h3 {
 }
 
 .main-nav a:hover {
-  background: #F08C21;        /* tangerine */
+  background: #E36888;        /* tangerine */
   border-color: #F08C21;
   transform: translateY(-1px);
 }
