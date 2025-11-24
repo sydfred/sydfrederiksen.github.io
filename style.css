@@ -204,12 +204,12 @@ h1, h2, h3 {
 /* hero photo as “sticker” */
 
 .hero-photo img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
+  width: 260px;        /* or 280px if you want it a little bigger */
+  height: auto;        /* 🔥 this is the key: no forced crop */
+  /* object-fit: cover;  🔥 remove or comment this out */
   border-radius: 32px;
   border: 3px solid #FFFAF3;
-  outline: 3px solid #6698CC;      /* sea outline */
+  outline: 3px solid #6698CC;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   display: block;
   margin: 0 auto;
