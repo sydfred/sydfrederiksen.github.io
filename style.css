@@ -211,7 +211,26 @@ h1, h2, h3 {
   margin: 0 auto;
   transform: rotate(-3deg);
 }
-
+/* ===== Photo sticker pill ===== */
+.photo-pill {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  background: #B4B534; /* matcha */
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  border: 2px solid #FFFAF3;
+  transform: rotate(-6deg);
+  z-index: 10;
+}
+.hero-photo {
+  position: relative;
+}
 /* ===== Publications (Blush) with scallop top ===== */
 
 #publications.section {
