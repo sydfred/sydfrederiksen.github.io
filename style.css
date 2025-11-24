@@ -235,3 +235,17 @@ h1, h2, h3 {
     margin-top: 10px;
   }
 }
+.interests {
+  margin-top: 20px;
+  padding-left: 20px;
+  color: #374151;
+  line-height: 1.5;
+}
+.highlight-box {
+  background: #e0ecff;
+  padding: 15px 20px;
+  border-left: 4px solid #2563eb;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
