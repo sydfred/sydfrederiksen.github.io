@@ -406,10 +406,11 @@ h1, h2, h3 {
   padding-bottom: 0;
 }
 .cv-section h2 {
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #B4B534;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  color: #E36888; /* Matcha title color if you're using that */
 }
 
 /* ===== Footer ===== */
